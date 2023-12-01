@@ -1,0 +1,102 @@
+%This is a \LaTeX\  template created following the Project Report Guidelines of the Examination Office at the International University of Applied Sciences. Please review carefully if all the details in this template are the same as those stated in the official guidelines. Always follow the official guidelines first rather than this template. If you find inconsistencies between the official guideline and this template, please report them to gissel.velarde@iu.org.
+%Author: Gissel Velarde
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry} % full-width
+\usepackage[utf8]{inputenc}
+
+\usepackage{setspace}
+\onehalfspacing % Set line spacing to 1.5
+
+\usepackage{helvet} %arial font
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+
+\usepackage[hidelinks]{hyperref} 
+\usepackage{apacite} %APA style citation, make sure it comes after hyperref!
+
+%\usepackage[style=apa, backend=biber]{biblatex}
+%\addbibresource{references.bib}
+
+\setlength\parindent{0pt} %https://tex.stackexchange.com/questions/27802/set-noindent-for-entire-file
+
+%\usepackage{ragged2e} %justified
+%\justifying
+
+
+\title{PROJECT REPORT LATEX TEMPLATE}
+\author{ Gissel Velarde }
+%\date{\today}
+
+
+\begin{document}
+
+\maketitle	
+%\pagebreak
+
+% Optional TOC
+ \tableofcontents
+ \pagebreak
+
+%--Paper--
+\section{INTRODUCTION}
+This is a \LaTeX\  template created following the Project Report Guidelines of the Examination Office at the International University of Applied Sciences. Please review carefully if all the details in this template are the same as those stated in the official guidelines. Always follow the official guidelines first rather than this template. If you find inconsistencies between the official guideline and this template, please report them to gissel.velarde@iu.org.
+
+\subsection{A sub section}
+For your report:
+
+\begin{itemize}
+\item Follow the official guide first,
+\item then, adapt this template as needed. 
+\end{itemize}
+
+Table \ref{table:1} is an example of a table. While referencing should be done according to APA 7th edition format, this template will produce citations in the APA 6th edition format.  For example, this is how you cite a book \cite{velarde2023artificial}, an article \cite{saito2015precision}, and a website \cite{Velarde-Nvidia}. This is how to use a footnote.\footnote{Please avoid using footnotes.} 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c||} 
+ \hline
+Study program &  Report lenght \\ [0.5ex] 
+ \hline\hline
+BACHELOR &  7 -- 10  pages of text  \\ 
+MASTER  & 12 -- 15 pages of text\\
+
+ \hline
+\end{tabular}
+\caption{Length of reports.}
+\label{table:1}
+\end{table}
+
+
+%\begin{table}[h]
+%\begin{tabular}{ll}
+%Length   BACHELOR   &  7–10 pages of text                                                                                \\
+%Length MASTER    &  12–15 pages of text                                                                                 \\
+%Paper size      & A4                                                                                                     \\
+%Margins       & Top and bottom 2cm; left 2cm; right 2cm                                                                   \\
+%Page numbers     & Centered at the end of the page                                                                      \\
+%Font    & General text: Arial 11 pt.; headings: Arial 12 pt.;   justified                                              \\
+%Line spacing       &  1.5                                                                                                  \\
+%Sentences     & Justified; hyphenation                                                                                  \\
+%Footnotes    & Arial 10 pt., justified                                                                                 \\
+%Citation     & APA                                         \\
+%                             
+%\end{tabular} 
+%\caption{Summary of formatting}
+%\label{t:1}
+%\end{table}
+
+
+%APA 7th edition
+%\printbibliography
+
+%the bibliography
+\bibliographystyle{apacite}
+\bibliography{references.bib}
+
+%--/Paper--
+
+\end{document}
