@@ -62,21 +62,21 @@ In general, reports:
 \end{itemize}
 
 \section{EXAMPLES}
-The captions of tables and figures should clearly explain the presented content, see for example Table \ref{table:1} and Figure \ref{fig:1}. Next, an example of a mathematical expression, where $x$ is the input to a Rectified Linear Unit (ReLU) activation function \shortcite{goodfellow2016deep}:
+The captions of tables and figures should clearly explain the presented content, see for example Table \ref{table:1} and Figure \ref{fig:1}. Next, see an example of a mathematical expression, where $x$ is the input to a Rectified Linear Unit (ReLU) activation function \shortcite{goodfellow2016deep}:
 
 \begin{equation} \label{e:1}
 f(x)=max(0,x). 
 \end{equation}
 
-Finally, this is how you cite a book \cite{velarde2023artificial}, an article \cite{lecun1989handwritten}, and online material \cite{Stutz2022}.\footnote{Please avoid using footnotes.} 
+Finally, this is how you cite a book \shortcite{velarde2023artificial}, an article \shortcite{lecun1989handwritten}, and online material \shortcite{Stutz2022}.\footnote{Please avoid using footnotes.} 
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c c|} 
  \hline
 Study program &  Report length \\  \hline
-BACHELOR &  7 -- 10  pages of text  \\ 
-MASTER  & 12 -- 15 pages of text\\
+BACHELOR &  7 -- 10  pages  \\ 
+MASTER  & 12 -- 15 pages\\
 
  \hline
 \end{tabular}
@@ -139,12 +139,12 @@ MASTER  & 12 -- 15 pages of text\\
 		
 		\draw[fill=black,draw=black,opacity=0.5] (12.5,0.5) -- (13,0.5) -- (13.65,1.25) -- (13.15,1.25) -- (12.5,0.5);
 	\end{tikzpicture}
-	\caption[Architecture of a two-layered convolutional neural network.]{Architecture of a convolutional neural network by \citeA{lecun1989handwritten}. This network has two convolutional layers, each followed by a subsampling layer. A fully connected layer precedes the output layer.  The latex code for this image was adapted from \cite{Stutz2022}.}
+	\caption[Architecture of a two-layered convolutional neural network.]{Architecture of a convolutional neural network by \citeA{lecun1989handwritten}. This network has two convolutional layers, each followed by a subsampling layer. A fully connected layer precedes the output layer.  The latex code for this image was adapted from \shortcite{Stutz2022}.}
 	\label{fig:1}
 \end{figure}
 
 \section{CONCLUSION}
-This template should help you get started with your report. Remember to double-check with the format of the official guidelines.
+This template should help you get started with your report. Place yourself in the reader's shoes and consider what your reader wants and needs to know about your report. The quality and clarity of the report is essential, not quantity. 
 
 %the bibliography
 \bibliographystyle{apacite}
