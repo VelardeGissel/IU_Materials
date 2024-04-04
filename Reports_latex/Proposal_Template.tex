@@ -1,0 +1,95 @@
+%This is a \LaTeX\  template created following the Project Report Guidelines of the Examination Office at the International University of Applied Sciences. Please review carefully if all the details in this template are the same as those stated in the official guidelines. Always follow the official guidelines first rather than this template. If you find inconsistencies between the official guideline and this template, please report them to gissel.velarde@iu.org.
+%Author: Gissel Velarde
+
+\documentclass[11pt,a4paper]{article}
+
+%\usepackage[margin=2cm]{geometry} % full-width
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{setspace}
+\onehalfspacing % Set line spacing to 1.5
+
+\usepackage{helvet} %arial font
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+
+\usepackage[hidelinks]{hyperref} 
+\usepackage{apacite} %APA style citation, make sure it comes after hyperref!
+
+\usepackage{amsmath, amssymb, latexsym}
+
+%packages for drawings
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{fadings}
+
+%\usepackage[style=apa, backend=biber]{biblatex}
+%\addbibresource{references.bib}
+
+\setlength\parindent{0pt} %https://tex.stackexchange.com/questions/27802/set-noindent-for-entire-file
+
+%\usepackage{ragged2e} %justified
+%\justifying
+
+
+\title{PROJECT PROPOSAL TEMPLATE}
+\author{ Gissel Velarde }
+%\date{\today}
+
+\begin{document}
+
+\maketitle	
+
+% TOC
+ \tableofcontents
+ \pagebreak
+\begin{abstract}
+(100 words maximum) It should state why the study will be done (a problem to be addressed), which method will be used, as well as the expected results and implications of the work.
+\end{abstract}
+
+
+%--Paper--
+\section{Graphical abstract}
+Include a graphical abstract of the proposal, see for example \shortcite{graphicalabstract, VELARDE2024a}. 
+
+\section{Proposed title}
+State the proposed title.
+
+\section{The State-of-the-art}
+(100 words maximum, 4 research papers minimum) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
+
+\section{Objectives}
+(150 words maximum) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
+
+\section{The method}
+(150 words maximum, 1 Figure) Describe the intended method, techniques, and evaluation framework. Include a Figure that explains the intended method. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}.
+
+\subsection{Data}
+(Minimum 1 Dataset) List and describe the dataset or datasets to be used.
+
+\section{The plan}
+Include a Gantt chart with tasks and their expected duration. 
+
+\section{Expected Contributions}
+(Maximum 5 sentences of less than 25 words each) List 5 expected contributions of your proposed project.
+ 
+\section{Agreements and constrains}
+(150 words maximum) List if there will be: 
+
+\begin{itemize}
+\item restrictions, confidentiality clauses, agreements,
+\item cooperation partners, stake holders.
+\end{itemize}
+
+If none of the above, please state: no agreements or restrictions. Alternatively, express if there is interest in publishing the research in a conference or journal. 
+
+%the bibliography
+\bibliographystyle{apacite}
+\bibliography{references.bib}
+
+%--/Paper--
+
+\end{document}
