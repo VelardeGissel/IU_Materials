@@ -47,16 +47,43 @@
  \tableofcontents
  \pagebreak
 \begin{abstract}
-(100 words maximum) It should state why the study will be done (a problem to be addressed), which method will be used, as well as the expected results and implications of the work.
+(200 words maximum) The abstract should state the motivation, that is, why the study will be done or which problem will be addressed, which method will be used, as well as the expected results and contributions or implications of the work. Give details. See for example the abstract in \cite{krizhevsky2017imagenet}.
 \end{abstract}
 
 
 %--Paper--
 \section{Graphical abstract}
-Include a graphical abstract of the proposal, see for example \shortcite{graphicalabstract, VELARDE2024a}. 
+Include a graphical abstract of the proposal including the motivation, method, expected results and contributions, see Figure \ref{fig:1}. Examples can be found in \shortcite{graphicalabstract, VELARDE2024a}. 
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\node at (4,14){\begin{tabular}{c}MOTIVATION\end{tabular}};	
+		
+		\node at (4,14){\begin{tabular}{c}MOTIVATION\end{tabular}};	
+		\node at (4,13.5){\begin{tabular}{c}Why?\end{tabular}};
+		
+		\node at (12,14){\begin{tabular}{c}METHOD\end{tabular}};
+		\node at (12,13.5){\begin{tabular}{c}How?\end{tabular}};		
+				
+		\node at (12,6){\begin{tabular}{c}RESULTS\end{tabular}};
+		\node at (12,5.5){\begin{tabular}{c}What?\end{tabular}};
+			
+		\node at (4,6){\begin{tabular}{c}CONTRIBUTIONS\end{tabular}};
+		\node at (4,5.5){\begin{tabular}{c}So What?\end{tabular}};
+		
+		\fill[black!30!white, fill opacity=0.3] (0,16) rectangle (8,8);
+		
+		\fill[black!10!white,fill opacity=0.3] (16,16) rectangle (8,8);
+		
+		\fill[black!40!white,fill opacity=0.3] (0,0) rectangle (8,8);
+		
+		\fill[black!20!white,fill opacity=0.3] (16,0) rectangle (8,8);				
+		
+		\end{tikzpicture}
+	\caption[Graphical Abstract]{Graphical Abstract.}
+	\label{fig:1}
+\end{figure}
 
-\section{Proposed title}
-State the proposed title.
 
 \section{The State-of-the-art}
 (100 words maximum, 4 research papers minimum) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
@@ -65,7 +92,7 @@ State the proposed title.
 (150 words maximum) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
 
 \section{The method}
-(150 words maximum, 1 Figure) Describe the intended method, techniques, and evaluation framework. Include a Figure that explains the intended method. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}.
+(150 words maximum, 1 Figure) Describe the intended method, techniques, and evaluation framework. Include a Figure that explains the intended method. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}, or Figure 2 in \shortcite{Badrinarayanan}.
 
 \subsection{Data}
 (Minimum 1 Dataset) List and describe the dataset or datasets to be used.
