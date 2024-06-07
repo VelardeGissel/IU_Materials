@@ -47,8 +47,41 @@
  \tableofcontents
  \pagebreak
 \begin{abstract}
-The abstract may be the only bit a reader will review to decide to continue reading the whole report. It should contain why the study was done (a problem to be addressed), which method was used, what the results were, and what the implications of the work are.
+The abstract may be the only bit a reader will review to decide to continue reading the whole report. It should contain the motivation addressing why the study was done, the method, results and contributions.
 \end{abstract}
+
+%\section*{Graphical abstract}
+ 
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\node at (4,14){\begin{tabular}{c}MOTIVATION\end{tabular}};	
+		
+		\node at (4,14){\begin{tabular}{c}MOTIVATION\end{tabular}};	
+		\node at (4,13.5){\begin{tabular}{c}Why?\end{tabular}};
+		
+		\node at (12,14){\begin{tabular}{c}METHOD\end{tabular}};
+		\node at (12,13.5){\begin{tabular}{c}How?\end{tabular}};		
+				
+		\node at (12,6){\begin{tabular}{c}RESULTS\end{tabular}};
+		\node at (12,5.5){\begin{tabular}{c}What?\end{tabular}};
+			
+		\node at (4,6){\begin{tabular}{c}CONTRIBUTIONS\end{tabular}};
+		\node at (4,5.5){\begin{tabular}{c}So What?\end{tabular}};
+		
+		\fill[black!30!white, fill opacity=0.3] (0,16) rectangle (8,8);
+		
+		\fill[black!10!white,fill opacity=0.3] (16,16) rectangle (8,8);
+		
+		\fill[black!40!white,fill opacity=0.3] (0,0) rectangle (8,8);
+		
+		\fill[black!20!white,fill opacity=0.3] (16,0) rectangle (8,8);				
+		
+		\end{tikzpicture}
+	\caption[Graphical Abstract]{Graphical Abstract. It is a graphical representation of the project, including the motivation, method, results and contributions. Examples can be found in \shortcite{graphicalabstract, VELARDE2024a}.}
+	\label{fig:gabs}
+\end{figure}
+\newpage
 %--Paper--
 \section{INTRODUCTION}
 This is a \LaTeX\  template created following the Project Report Guidelines of the Examination Office at the International University of Applied Sciences. Please review carefully if all the details in this template are the same as those in the official guidelines. 
