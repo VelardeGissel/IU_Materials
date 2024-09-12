@@ -26,6 +26,8 @@
 \usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{fadings}
 
+\usepackage{parskip} %https://www.overleaf.com/learn/latex/Articles/How_to_change_paragraph_spacing_in_LaTeX
+
 %\usepackage[style=apa, backend=biber]{biblatex}
 %\addbibresource{references.bib}
 
@@ -78,7 +80,7 @@ The abstract may be the only bit a reader will review to decide to continue read
 		\fill[black!20!white,fill opacity=0.3] (16,0) rectangle (8,8);				
 		
 		\end{tikzpicture}
-	\caption[Graphical Abstract]{Graphical Abstract. It is a graphical representation of the project, including the motivation, method, results and contributions. Examples can be found in \shortcite{graphicalabstract, VELARDE2024a}.}
+	\caption[Graphical Abstract]{Graphical Abstract. It is a graphical representation of the project, including the motivation, method, results and contributions. Examples of graphical abstracts can be found in \shortcite{graphicalabstract, VELARDE2024a}. Source: Own results.}
 	\label{fig:gabs}
 \end{figure}
 \newpage
@@ -103,19 +105,21 @@ The captions of tables and figures should clearly explain the presented content,
 f(x)=max(0,x). 
 \end{equation}
 
-Finally, this is how you cite online material \shortcite{Stutz2022}, an article \shortcite{lecun1989handwritten}, and a book \shortcite{velarde2023artificial}.\footnote{Please avoid using footnotes.} 
+Finally, this is how you cite online material~\shortcite{Stutz2022}, an article~\shortcite{lecun1989handwritten}, and a book \shortcite{velarde2023artificial}. Quotations should be referenced with page numbers, for example: ``There is no shortage of stories of those who with a brilliant idea and computational skills, have gone from a garage to an empire in the Artificial Era in just a few years''~\shortcite[p.~1]{velarde2023artificial}.\footnote{Avoid using footnotes.} 
 
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c c|} 
  \hline
-Study program &  Report length \\  \hline
-BACHELOR &  7 -- 10  pages  \\ 
-MASTER  & 12 -- 15 pages\\
+Section &  Charactheristics \\  \hline
+Introduction &  Explains why the work was carried out. \\ 
+Method   & Describes in detail how to do something (know-how).\\ 
+Results  & Presents the findings.\\
+Conclusion  & Discusses the implications of the work.\\
 
  \hline
 \end{tabular}
-\caption{Length of reports in number of pages according to the study program.}
+\caption{Basic sections in a report. Source: Own results.}
 \label{table:1}
 \end{table}
 
@@ -174,7 +178,7 @@ MASTER  & 12 -- 15 pages\\
 		
 		\draw[fill=black,draw=black,opacity=0.5] (12.5,0.5) -- (13,0.5) -- (13.65,1.25) -- (13.15,1.25) -- (12.5,0.5);
 	\end{tikzpicture}
-	\caption[Architecture of a two-layered convolutional neural network.]{Architecture of a convolutional neural network by \citeA{lecun1989handwritten}. This network has two convolutional layers, each followed by a subsampling layer. A fully connected layer precedes the output layer.  The latex code for this image was adapted from \shortcite{Stutz2022}.}
+	\caption[Architecture of a two-layered convolutional neural network.]{Architecture of a convolutional neural network by \citeA{lecun1989handwritten}. This network has two convolutional layers, each followed by a subsampling layer. A fully connected layer precedes the output layer.  Source: The latex code for this image was adapted from \shortcite{Stutz2022}.}
 	\label{fig:1}
 \end{figure}
 
