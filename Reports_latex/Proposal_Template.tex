@@ -30,6 +30,7 @@
 
 %\usepackage[style=apa, backend=biber]{biblatex}
 %\addbibresource{references.bib}
+\usepackage{xcolor} %text color
 
 \setlength\parindent{0pt} %https://tex.stackexchange.com/questions/27802/set-noindent-for-entire-file
 
@@ -49,7 +50,7 @@
  \tableofcontents
  \pagebreak
 \begin{abstract}
-(200 words maximum) The abstract should state the motivation, that is, why the study will be done or which problem will be addressed, which method will be used, as well as the expected results and contributions or implications of the work. Give details. See for example the abstract in \cite{krizhevsky2017imagenet}.
+({\color{blue}200 words maximum}) The abstract should state the motivation, that is, why the study will be done or which problem will be addressed, which method will be used, as well as the expected results and contributions or implications of the work. Give details. See for example the abstract in \cite{krizhevsky2017imagenet}.
 \end{abstract}
 
 
@@ -88,25 +89,54 @@
 
 \newpage
 \section{The State-of-the-art}
-(100 words maximum, 4 research papers minimum) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
+({\color{blue}100 words maximum, 2 research papers minimum, 1 Comparison Table}) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
+
+Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{table:1}. For example, if the task is classification, the performance column should include the reported F1, Precision, and Recall on a given dataset or datasets. Add a comment if necessary.
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Reference} & \textbf{Task} & \textbf{Performance} & \textbf{Dataset} & \textbf{Comment} \\ \hline
+                   &               &                      &                  &                  \\ \hline
+                   &               &                      &                  &                  \\ \hline
+\end{tabular}
+\caption{State-of-the-art comparison Table.}
+\label{table:1}
+
+\end{table}
 
 \section{Objectives}
-(150 words maximum) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
+({\color{blue}150 words maximum}) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
 
 \section{The method}
-(150 words maximum, 1 Figure) Describe the intended method, techniques, and evaluation framework. Include a Figure that explains the intended method. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}, or Figure 2 in \shortcite{Badrinarayanan}.
+({\color{blue}1 Figure}) Present the intended method graphically. Include the intended dataset, techniques, and evaluation framework. Add as much detail as possible in the figure. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}, or Figure 2 in \shortcite{Badrinarayanan}.
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		
+			
+		\fill[black!40!white,fill opacity=0.2] (0,0) rectangle (15,8);
+				
+		
+		\end{tikzpicture}
+	\caption[The intended Method]{The intended Method. }
+	\label{fig:2}
+\end{figure}
+
 
 \subsection{Data}
-(Minimum 1 Dataset) List and describe the dataset or datasets to be used.
+({\color{blue}Minimum 1 Dataset}) List and describe the dataset or datasets to be used.
 
 \section{The plan}
 Include a Gantt chart with tasks and their expected duration. 
 
 \section{Expected Contributions}
-(Maximum 5 sentences of less than 25 words each) List 5 expected contributions of your proposed project.
+({\color{blue}Maximum 5 sentences of less than 25 words each}) List 5 expected contributions of your proposed project.
  
 \section{Agreements and constraints}
-(100 words maximum) State if: 
+({\color{blue}100 words maximum}) State if: 
 
 \begin{itemize}
 \item the work can be published without restrictions, or 
