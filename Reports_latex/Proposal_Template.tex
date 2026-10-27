@@ -1,5 +1,6 @@
-%This is a \LaTeX\  template created following the Project Report Guidelines of the Examination Office at the International University of Applied Sciences. Please review carefully if all the details in this template are the same as those stated in the official guidelines. Always follow the official guidelines first rather than this template. If you find inconsistencies between the official guideline and this template, please report them to gissel.velarde@iu.org.
+%This is a \LaTeX\  template.
 %Author: Gissel Velarde
+%Update. 27.10.2026
 
 \documentclass[11pt,a4paper]{article}
 
@@ -89,14 +90,15 @@
 
 \newpage
 \section{Introduction}
-({\color{blue}No changes are needed in this section at the moment of project proposal.}) Please use this template to present a project proposal. As the project advances, this template should be updated until it becomes your final document. 
+({\color{blue} 30 words maximum.}) Introduce the topic in one sentence. As the project advances, this template should be updated until it becomes the final document. 
 
 \section{The State-of-the-art}
 ({\color{blue}100 words maximum, 2 research papers minimum, 1 Comparison Table}) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
 
-Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{table:1}. For example, if the task is classification, the performance column should include the reported F1, Precision, and Recall on a given dataset or datasets. Add a comment if necessary.
+Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{table:1}. For example, if the task is classification, the performance column should include the reported F1, Precision, and Recall on a given dataset or datasets. Add a comment if necessary. 
 
-\begin{table}[]
+
+\begin{table}[h!]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
 \hline
@@ -110,10 +112,17 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 \end{table}
 
 \section{Objectives}
-({\color{blue}150 words maximum}) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
+({\color{blue} About 20 words per sentence.}) Describe the main objective and sub-objectives of the project. Alternatively propose a hypothesis and its research questions. 
+
+\begin{itemize}
+\item First sub-objective.
+\item Second sub-objective.
+\item Third sub-objective.
+\item Fourth sub-objective.
+\end{itemize}
 
 \section{The method}
-({\color{blue}A Figure}) Present the intended method graphically. Fill Figure \ref{fig:2}. Include the intended dataset, techniques, and evaluation framework. Add as much detail as possible in the figure. See for example Figure 1 in \shortcite{Sossi-Velarde-Zieba}, or Figure 2 in \shortcite{Badrinarayanan}.
+({\color{blue}Include a Figure. Describe it in maximum 30 words.}) Present the intended method graphically. Fill Figure \ref{fig:2}. 
 
 \begin{figure}[h]
 	\centering
@@ -124,20 +133,34 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 				
 		
 		\end{tikzpicture}
-	\caption[The intended Method]{The intended Method. }
+	\caption[The intended Method]{Present the intended Method. Include the intended dataset, techniques, and evaluation framework. Add as much detail as possible in the figure. See for example Figure 1 in \shortciteA[p.~2]{Sossi-Velarde-Zieba}, or Figure 2 in \shortciteA[p.~4]{Badrinarayanan}.}
 	\label{fig:2}
 \end{figure}
 
 
 \subsection{Data}
 ({\color{blue}Minimum 1 Dataset}) List and describe the dataset or datasets to be used.
-
+\newpage
 \section{Results}
 
-({\color{blue}No changes to this section are needed at the initial stage}) This section is reserved to present the results. 
+({\color{blue} Include a table.}) Present a comparison table with expected own results as in Table \ref{table:2}. See for example Tables 1 and 2 in \citeA[p.~7]{krizhevsky2017imagenet}. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Model} & \textbf{ Top-1} & \textbf{Top-5} & \textbf{Dataset} & \textbf{Comment} \\ \hline
+CNN \cite{krizhevsky2017imagenet}                 &    37.5 \%           &       17.0 \%               &      ILSVRC-2010             &     On  GTX 580 3GB GPUs           \\ \hline
+Expected own result  &     to be tested         &            to be tested          &       ILSVRC-2010            &       To be trained on Google Colab         \\ \hline
+\end{tabular}
+\caption{Expected Results on ILSVRC-2010 dataset \protect\cite{berg2010large}.}
+\label{table:2}
+
+\end{table}
+
 
 \section{Expected Contributions / Conclusion}
-({\color{blue}Maximum 5 sentences of less than 25 words each}) List 5 expected contributions of your proposed project. This section can be renamed as "Conclusion".
+({\color{blue}Maximum 5 sentences of less than 25 words each}) List 2 to 5 expected contributions of your proposed project. This section can be renamed as "Conclusion".
 
 \appendix
 \section{The plan}
@@ -148,8 +171,7 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 ({\color{blue}100 words maximum}) State if: 
 
 \begin{itemize}
-\item the work can be published without restrictions, or 
-\item if it needs a confidentiality agreement.
+\item the work can be published without restrictions, or if it needs a confidentiality agreement.
 \item In addition, mention the stakeholders if any.
 \end{itemize}
 
