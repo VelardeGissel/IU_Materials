@@ -1,6 +1,6 @@
 %This is a \LaTeX\  template.
 %Author: Gissel Velarde
-%Update. 27.10.2026
+%Update. 28.10.2026
 
 \documentclass[11pt,a4paper]{article}
 
@@ -51,7 +51,7 @@
  \tableofcontents
  \pagebreak
 \begin{abstract}
-({\color{blue}200 words maximum}) The abstract should state the motivation, that is, why the study will be done or which problem will be addressed, which method will be used, as well as the expected results and contributions or implications of the work. Give details. See for example the abstract in \cite{krizhevsky2017imagenet}. In addition, include a graphical abstract as seen in Figure \ref{fig:1}.
+({\color{blue}200 words maximum}) Follow the instructions, paying close attention to the word count limits and requirements. The abstract should state the motivation, that is, why the study will be done or which problem will be addressed, which method will be used, as well as the expected results and contributions or implications of the work. Give details. See for example the abstract in \cite{krizhevsky2017imagenet}. In addition, include a graphical abstract as seen in Figure \ref{fig:1}.
 \end{abstract}
 
 
@@ -90,10 +90,10 @@
 
 \newpage
 \section{Introduction}
-({\color{blue} 30 words maximum.}) Introduce the topic in one sentence. As the project advances, this template should be updated until it becomes the final document. 
+({\color{blue} 30 words maximum.}) Introduce the topic in one sentence. As the project advances, this template should be updated until it becomes the final document. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
 
 \section{The State-of-the-art}
-({\color{blue}100 words maximum, 2 research papers minimum, 1 Comparison Table}) Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. Use the American Psychological Association (APA) style for citations \shortcite{hughes2017APA}.
+({\color{blue} 2 research papers minimum, 1 Comparison Table}) %Describe and reference the state-of-the-art, primarily focussing on peer-reviewed scientific publications. Explain how these works relate to your proposal. 
 
 Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{table:1}. For example, if the task is classification, the performance column should include the reported F1, Precision, and Recall on a given dataset or datasets. Add a comment if necessary. 
 
@@ -118,7 +118,6 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 \item First sub-objective.
 \item Second sub-objective.
 \item Third sub-objective.
-\item Fourth sub-objective.
 \end{itemize}
 
 \section{The method}
@@ -139,11 +138,11 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 
 
 \subsection{Data}
-({\color{blue}Minimum 1 Dataset}) List and describe the dataset or datasets to be used.
+({\color{blue}Minimum 1 Dataset}) List and describe the dataset or datasets to be used. Include the statistics: number of samples, features, etc.
 \newpage
 \section{Results}
 
-({\color{blue} Include a table.}) Present a comparison table with expected own results as in Table \ref{table:2}. See for example Tables 1 and 2 in \citeA[p.~7]{krizhevsky2017imagenet}. 
+({\color{blue} Include a table.}) Present a comparison table with expected own results as in Table \ref{table:2}. See for example Tables 1 and 2 in \citeA[p.~7]{krizhevsky2017imagenet}. Indicate the task, metric and dataset. Provide the reference to the state-of-the-art results.
 
 \begin{table}[h!]
 \centering
@@ -151,9 +150,9 @@ Present the State-of-the-art in a comparison table. Fill or adapt Table \ref{tab
 \hline
 \textbf{Model} & \textbf{ Top-1} & \textbf{Top-5} & \textbf{Dataset} & \textbf{Comment} \\ \hline
 CNN \cite{krizhevsky2017imagenet}                 &    37.5 \%           &       17.0 \%               &      ILSVRC-2010             &     On  GTX 580 3GB GPUs           \\ \hline
-Expected own result  &     to be tested         &            to be tested          &       ILSVRC-2010            &       To be trained on Google Colab         \\ \hline
+Expected own results  &     to be tested         &            to be tested          &       ILSVRC-2010            &       To be trained on Google Colab         \\ \hline
 \end{tabular}
-\caption{Expected Results on ILSVRC-2010 dataset \protect\cite{berg2010large}.}
+\caption{Expected results. Top-1 and Top-5 classification error rates obtained by a Convolutional Neural network (CNN) \protect\cite[p.~7]{krizhevsky2017imagenet} over ILSVRC-2010 test set \protect\cite{berg2010large}.}
 \label{table:2}
 
 \end{table}
@@ -161,6 +160,11 @@ Expected own result  &     to be tested         &            to be tested       
 
 \section{Expected Contributions / Conclusion}
 ({\color{blue}Maximum 5 sentences of less than 25 words each}) List 2 to 5 expected contributions of your proposed project. This section can be renamed as "Conclusion".
+\begin{itemize}
+\item First expected contribution.
+\item Second expected contribution.
+\item Third expected contribution.
+\end{itemize}
 
 \appendix
 \section{The plan}
@@ -168,12 +172,7 @@ Expected own result  &     to be tested         &            to be tested       
 
  
 \section{Agreements and constraints}
-({\color{blue}100 words maximum}) State if: 
-
-\begin{itemize}
-\item the work can be published without restrictions, or if it needs a confidentiality agreement.
-\item In addition, mention the stakeholders if any.
-\end{itemize}
+({\color{blue}Only if needed}) State if the work needs a confidentiality agreement and mention the stakeholders if any.
 
 %the bibliography
 \bibliographystyle{apacite}
